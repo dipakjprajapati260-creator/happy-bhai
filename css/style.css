@@ -1,0 +1,56 @@
+/* 🌙 DARK MODE */
+.dark {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+.dark .navbar {
+  background: linear-gradient(90deg, #020617, #1e293b);
+}
+
+.dark .card {
+  background: #020617;
+  color: #e5e7eb;
+  border-left: 8px solid #22c55e;
+}
+
+.dark footer {
+  background: #020617;
+}
+
+/* ✨ ANIMATIONS */
+.hero, .card {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero {
+    padding: 70px 20px;
+  }
+}
